@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="690" height="510" font-family="DejaVu Sans Mono, monospace">
+<rect width="690" height="510" fill="#16181c"/>
+<text x="130" y="30" fill="#ddd" font-size="18">SXY FIFO (3 deep)</text>
+<text x="390" y="30" fill="#ddd" font-size="18">SZ FIFO (4 deep)</text>
+<text x="161.0" y="60" fill="#999" font-size="14" text-anchor="middle">SXY0</text>
+<text x="231.0" y="60" fill="#999" font-size="14" text-anchor="middle">SXY1</text>
+<text x="301.0" y="60" fill="#999" font-size="14" text-anchor="middle">SXY2</text>
+<text x="421.0" y="60" fill="#999" font-size="14" text-anchor="middle">SZ0</text>
+<text x="491.0" y="60" fill="#999" font-size="14" text-anchor="middle">SZ1</text>
+<text x="561.0" y="60" fill="#999" font-size="14" text-anchor="middle">SZ2</text>
+<text x="631.0" y="60" fill="#999" font-size="14" text-anchor="middle">SZ3</text>
+<text x="15" y="101.0" fill="#ddd" font-size="16">start</text>
+<rect x="130" y="75" width="62" height="40" rx="5" fill="#3a3a3a"/><text x="161.0" y="101.0" fill="#111" font-size="17" font-weight="bold" text-anchor="middle">x</text>
+<rect x="200" y="75" width="62" height="40" rx="5" fill="#3a3a3a"/><text x="231.0" y="101.0" fill="#111" font-size="17" font-weight="bold" text-anchor="middle">x</text>
+<rect x="270" y="75" width="62" height="40" rx="5" fill="#3a3a3a"/><text x="301.0" y="101.0" fill="#111" font-size="17" font-weight="bold" text-anchor="middle">x</text>
+<rect x="390" y="75" width="62" height="40" rx="5" fill="#3a3a3a"/><text x="421.0" y="101.0" fill="#111" font-size="17" font-weight="bold" text-anchor="middle">z</text>
+<rect x="460" y="75" width="62" height="40" rx="5" fill="#3a3a3a"/><text x="491.0" y="101.0" fill="#111" font-size="17" font-weight="bold" text-anchor="middle">z</text>
+<rect x="530" y="75" width="62" height="40" rx="5" fill="#3a3a3a"/><text x="561.0" y="101.0" fill="#111" font-size="17" font-weight="bold" text-anchor="middle">z</text>
+<rect x="600" y="75" width="62" height="40" rx="5" fill="#3a3a3a"/><text x="631.0" y="101.0" fill="#111" font-size="17" font-weight="bold" text-anchor="middle">z</text>
+<text x="15" y="179.0" fill="#ddd" font-size="16">rtps v0</text>
+<rect x="130" y="153" width="62" height="40" rx="5" fill="#3a3a3a"/><text x="161.0" y="179.0" fill="#111" font-size="17" font-weight="bold" text-anchor="middle">x</text>
+<rect x="200" y="153" width="62" height="40" rx="5" fill="#3a3a3a"/><text x="231.0" y="179.0" fill="#111" font-size="17" font-weight="bold" text-anchor="middle">x</text>
+<rect x="270" y="153" width="62" height="40" rx="5" fill="#e8a33d"/><text x="301.0" y="179.0" fill="#111" font-size="17" font-weight="bold" text-anchor="middle">v0</text>
+<rect x="390" y="153" width="62" height="40" rx="5" fill="#3a3a3a"/><text x="421.0" y="179.0" fill="#111" font-size="17" font-weight="bold" text-anchor="middle">z</text>
+<rect x="460" y="153" width="62" height="40" rx="5" fill="#3a3a3a"/><text x="491.0" y="179.0" fill="#111" font-size="17" font-weight="bold" text-anchor="middle">z</text>
+<rect x="530" y="153" width="62" height="40" rx="5" fill="#3a3a3a"/><text x="561.0" y="179.0" fill="#111" font-size="17" font-weight="bold" text-anchor="middle">z</text>
+<rect x="600" y="153" width="62" height="40" rx="5" fill="#e8a33d"/><text x="631.0" y="179.0" fill="#111" font-size="17" font-weight="bold" text-anchor="middle">v0</text>
+<text x="15" y="257.0" fill="#ddd" font-size="16">rtps v1</text>
+<rect x="130" y="231" width="62" height="40" rx="5" fill="#3a3a3a"/><text x="161.0" y="257.0" fill="#111" font-size="17" font-weight="bold" text-anchor="middle">x</text>
+<rect x="200" y="231" width="62" height="40" rx="5" fill="#e8a33d"/><text x="231.0" y="257.0" fill="#111" font-size="17" font-weight="bold" text-anchor="middle">v0</text>
+<rect x="270" y="231" width="62" height="40" rx="5" fill="#5fb3d9"/><text x="301.0" y="257.0" fill="#111" font-size="17" font-weight="bold" text-anchor="middle">v1</text>
+<rect x="390" y="231" width="62" height="40" rx="5" fill="#3a3a3a"/><text x="421.0" y="257.0" fill="#111" font-size="17" font-weight="bold" text-anchor="middle">z</text>
+<rect x="460" y="231" width="62" height="40" rx="5" fill="#3a3a3a"/><text x="491.0" y="257.0" fill="#111" font-size="17" font-weight="bold" text-anchor="middle">z</text>
+<rect x="530" y="231" width="62" height="40" rx="5" fill="#e8a33d"/><text x="561.0" y="257.0" fill="#111" font-size="17" font-weight="bold" text-anchor="middle">v0</text>
+<rect x="600" y="231" width="62" height="40" rx="5" fill="#5fb3d9"/><text x="631.0" y="257.0" fill="#111" font-size="17" font-weight="bold" text-anchor="middle">v1</text>
+<text x="15" y="335.0" fill="#ddd" font-size="16">rtps v2</text>
+<rect x="130" y="309" width="62" height="40" rx="5" fill="#e8a33d"/><text x="161.0" y="335.0" fill="#111" font-size="17" font-weight="bold" text-anchor="middle">v0</text>
+<rect x="200" y="309" width="62" height="40" rx="5" fill="#5fb3d9"/><text x="231.0" y="335.0" fill="#111" font-size="17" font-weight="bold" text-anchor="middle">v1</text>
+<rect x="270" y="309" width="62" height="40" rx="5" fill="#7fc97f"/><text x="301.0" y="335.0" fill="#111" font-size="17" font-weight="bold" text-anchor="middle">v2</text>
+<rect x="390" y="309" width="62" height="40" rx="5" fill="#3a3a3a"/><text x="421.0" y="335.0" fill="#111" font-size="17" font-weight="bold" text-anchor="middle">z</text>
+<rect x="460" y="309" width="62" height="40" rx="5" fill="#e8a33d"/><text x="491.0" y="335.0" fill="#111" font-size="17" font-weight="bold" text-anchor="middle">v0</text>
+<rect x="530" y="309" width="62" height="40" rx="5" fill="#5fb3d9"/><text x="561.0" y="335.0" fill="#111" font-size="17" font-weight="bold" text-anchor="middle">v1</text>
+<rect x="600" y="309" width="62" height="40" rx="5" fill="#7fc97f"/><text x="631.0" y="335.0" fill="#111" font-size="17" font-weight="bold" text-anchor="middle">v2</text>
+<text x="130" y="369" fill="#f0d070" font-size="14">triangle: nclip SXY0-2, avsz3 SZ1-3</text>
+<text x="15" y="413.0" fill="#ddd" font-size="16">rtps v3</text>
+<rect x="130" y="387" width="62" height="40" rx="5" fill="#5fb3d9"/><text x="161.0" y="413.0" fill="#111" font-size="17" font-weight="bold" text-anchor="middle">v1</text>
+<rect x="200" y="387" width="62" height="40" rx="5" fill="#7fc97f"/><text x="231.0" y="413.0" fill="#111" font-size="17" font-weight="bold" text-anchor="middle">v2</text>
+<rect x="270" y="387" width="62" height="40" rx="5" fill="#d97ab3"/><text x="301.0" y="413.0" fill="#111" font-size="17" font-weight="bold" text-anchor="middle">v3</text>
+<rect x="390" y="387" width="62" height="40" rx="5" fill="#e8a33d"/><text x="421.0" y="413.0" fill="#111" font-size="17" font-weight="bold" text-anchor="middle">v0</text>
+<rect x="460" y="387" width="62" height="40" rx="5" fill="#5fb3d9"/><text x="491.0" y="413.0" fill="#111" font-size="17" font-weight="bold" text-anchor="middle">v1</text>
+<rect x="530" y="387" width="62" height="40" rx="5" fill="#7fc97f"/><text x="561.0" y="413.0" fill="#111" font-size="17" font-weight="bold" text-anchor="middle">v2</text>
+<rect x="600" y="387" width="62" height="40" rx="5" fill="#d97ab3"/><text x="631.0" y="413.0" fill="#111" font-size="17" font-weight="bold" text-anchor="middle">v3</text>
+<text x="130" y="447" fill="#f0d070" font-size="14">quad: avsz4 SZ0-3 (v0's XY gone)</text>
+<text x="320" y="498" fill="#999" font-size="13" text-anchor="middle">new value enters at the right, oldest falls off the left</text>
+</svg>
