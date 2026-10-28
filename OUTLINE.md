@@ -15,7 +15,7 @@ Where [ps1-bare-metal](https://github.com/spicyjpeg/ps1-bare-metal) already teac
 ## 2. The CPU
 
 - MIPS R3000A in brief: what the code you write compiles to, and the toolchains that target it (GCC, Clang), with setup left to psyqo's GETTING_STARTED.md.
-- Quirks that bite C++ code: the load delay slot, alignment (a pointer cast that aliases a misaligned buffer raises an address error), and no FPU.
+- Quirks that bite C++ code: the load delay slot, alignment (a word or halfword access through a pointer cast onto a misaligned buffer raises an address error), and no FPU.
 - Caches and the 1 KB scratchpad: what is cached, what is not, and when the scratchpad pays.
 - End state: the reader reads a disassembly of their own hot loop and explains each stall.
 - Builds on: `hello`.
@@ -33,7 +33,8 @@ Where [ps1-bare-metal](https://github.com/spicyjpeg/ps1-bare-metal) already teac
 ## 4. VRAM and framebuffers
 
 - VRAM as one 1024x512 16-bit surface with no fixed layout: you decide where framebuffers, textures and palettes go.
-- The display area (GP1 05h start, GP1 06h/07h ranges) versus the drawing area (GP0 E3h-E5h), and double buffering by swapping them; GP1 08h picks the video mode.
+- The display area (GP1 05h start, GP1 06h/07h ranges) versus the drawing area (GP0 E3h/E4h clip, E5h offset); GP1 08h picks the video mode.
+- Double buffering: two regions of VRAM, drawing into one while GP1 05h shows the other, then trading places each frame.
 - End state: the reader draws a VRAM map for their own program and picks a resolution and buffer placement on purpose.
 - Builds on: `hello` (`GPU::Configuration`).
 - psx-spx: `gpu/video-memory-vram.md`, `gpu/display-control-commands-gp1.md`, `gpu/rendering-attributes.md`.
