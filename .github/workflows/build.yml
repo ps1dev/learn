@@ -1,0 +1,46 @@
+name: Build
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  examples:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    timeout-minutes: 30
+    container: ghcr.io/grumpycoders/pcsx-redux-build:latest
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: recursive
+          set-safe-directory: true
+          persist-credentials: false
+
+      - name: OpenBIOS
+        run: make -C third_party/nugget/openbios -j2 all
+
+      - name: Examples
+        run: |
+          for d in examples/*/; do
+            echo "::group::$d"
+            make -C "$d" -j2 all BOOK_CI=true
+            echo "::endgroup::"
+          done
+
+      - name: Emulator
+        # The dev channel AppImage, extracted because a runner has no FUSE.
+        run: |
+          curl -sL -o pcsx-redux.zip https://distrib.app/pub/org/pcsx-redux/project/dev-linux-x64/latest
+          unzip -q pcsx-redux.zip
+          ./PCSX-Redux-*.AppImage --appimage-extract > /dev/null
+
+      - name: Boot every example
+        run: ci/run-examples.sh "$GITHUB_WORKSPACE/squashfs-root/AppRun" third_party/nugget/openbios/openbios.bin
